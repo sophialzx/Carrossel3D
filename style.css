@@ -1,0 +1,98 @@
+@charset "uft-8";
+
+body {
+    margin: 0;
+    background: #00000082;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(27, 27, 27)(134, 103);
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 15s infinite forwards linear;
+}
+
+.imagem {
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span {
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    background: #f5deb32c;
+}
+
+@keyframes rotate360 {
+    
+    from {
+        transform: rotateY(0deg)
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/18/06/49/capybara-2653996_640.jpg);
+    transform: rotateY(0deg) translateZ(430px) ;
+}
+.imagem:nth-child(2) {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8xQl4Hp0EK55YXbZeiYRNg7-rMdFy4auDYA&usqp=CAU);
+    transform: rotateY(40deg) translateZ(430px) ;
+}
+
+.imagem:nth-child(3) {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWzXhmmc0rkymvItN64TeHh6ccnU-FYUrgj05VWsKR48w5CoqWgnC52jOQCechH7oPP4&usqp=CAU);
+    transform: rotateY(80deg) translateZ(430px) ;
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://pt.bcdn.biz/images/emails/320x192/71f9ea7d-6721-46fa-80f5-bdfe87d0e5e3.jpg);
+    transform: rotateY(120deg) translateZ(430px) ;
+}
+
+.imagem:nth-child(5) {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc8_62e4DVtjEO4FV7bmBC9ZI8pPoBbS2xXA&usqp=CAU);
+    transform: rotateY(160deg) translateZ(430px) ;
+}
+
+.imagem:nth-child(6) {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFnYeFH4ecbysD2vn8d-eaKSgMaY-rjPd3LA&usqp=CAU);
+    transform: rotateY(200deg) translateZ(430px) ;
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/8711_2FCCB4ED3F67BD4B.jpg?w=1024);
+    transform: rotateY(240deg) translateZ(430px) ;
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://img.elo7.com.br/product/original/31AE352/squirtle-pokemon-3d.jpg);
+    transform: rotateY(280deg) translateZ(430px) ;
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://m.media-amazon.com/images/I/51dopNUhPEL._AC_UF1000,1000_QL80_.jpg);
+    transform: rotateY(320deg) translateZ(430px) ;
+}
+
